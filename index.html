@@ -18,7 +18,6 @@
           <div id="feature" class="features">
             <div class="action">
               <button id="list-task" class="button-17">List Tasks</button>
-              <button id="search-task" class="button-17">Search Task</button>
               <button id="add-task" class="button-17">Add Task</button>
           </div>
         </div>
@@ -27,21 +26,28 @@
             <button id="back1" class="button-17">Back</button>
             <div class="button-description">
               <p>Task Name: </p>
-              <input name="f-name" id="f-name" placeholder="enter your first name"/>
+              <input name="f-name" id="f-name" placeholder=" Task name" class="input-name"/>
             </div>
             <div class="button-description">
               <p>Start Date: </p>
               <input type="date" name="start-date" id="start-date" class="start-date"/>
             </div>
             <div class="button-description">
-              <p>End Date: </p>
+              <p>Due Date: </p>
               <input type="date" name="end-date" id="end-date" class="end-date"/>
+            </div>
+            <div class="button-description">
+              <p>Priority:</p>
+              <input type="checkbox" id="high" name="high" value="high">
+              <label for="high"> high</label>
+              <input type="checkbox" id="normal" name="normal" value="normal" checked>
+              <label for="normal"> normal</label><br>
             </div>
             <button id="add" class="button-17">Add</button>
           </div>
           <div id="right" class="right">
             <button id="back2" class="button-17">Back</button>
-            <div class="titles"><p>Task Name</p> <p>Start Date</p> <p>Due Date</p> <p>Completed</p> <p>Active</p></div> 
+            <div class="titles"><p>Task Name</p> <p>Start Date</p> <p>Due Date</p> <p>Completed</p> <p>Active</p> <p>Priority</p></div> 
             <div id="task-display" class="task-display">
               <ul id="list" class="list">
                 <!-- <button onclick="blabla">click me 3ad</button> -->

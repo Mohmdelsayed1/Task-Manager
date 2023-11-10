@@ -72,6 +72,7 @@
   width: 100%;
   border-radius: 15px;
   position: absolute;
+  overflow-y: scroll;
 }
 
 .left{
@@ -81,11 +82,11 @@
   align-items: center;
   margin-top: 5%;
   gap: 25px;
-  height: 40vh;
+  height: 50vh;
   width: 20%;
   border-radius: 25px;
   background-color: #3c4043;
-  opacity: 0.7;
+  /* opacity: 0.7; */
 }
 
 .button-description{
@@ -94,7 +95,13 @@
   justify-content: center;
   align-items: center;
   gap:10px;
+  object-fit: contain;
 }
+
+.input-name{
+  width: 40%;
+}
+
 .right{
   display: flex;
   flex-direction: column;
@@ -106,17 +113,47 @@
   height: 80vh;
 }
 
-/* .task-name{
-  padding-right: 50%;
+.task-display{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.st-date{
-  margin-left: 50px;
+.titles{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:40px;
+  color: white;
+  margin-right: 15%;
 }
 
-.end-date{
-  margin-left: 50px;
-} */
+.save{
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  color: rgb(60, 66, 87);
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  padding: 4px 8px;
+  display: inline-block;
+  min-height: 28px;
+}
+
+.task-name{
+  align-items: center;
+  width: 10%;
+}
+
+.start-date{
+  font-size: small;
+}
+
+.prior{
+  width: 10%;
+}
+
 
 .list{
   display: flex;
@@ -135,6 +172,7 @@
   display: flex;
   color: white;
   gap: 40px;
+  font-size: large;
 }
 
 .small-button{
@@ -182,13 +220,7 @@
   align-items: center;
 }
 
-.titles{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap:40px;
-  color: white;
-}
+
 
 .checkbox{
   height: 40px;
