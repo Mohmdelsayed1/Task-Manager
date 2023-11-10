@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 90vh;
+  height: 100vh;
+  /* position: relative; */
 }
 
 .welcome {
@@ -24,6 +25,7 @@
   font-style: italic;
   padding-top: 20px;
   padding-left: 20px;
+  position: absolute;
 }
 
 .qoute > h1 {
@@ -35,12 +37,14 @@
 
 .benjamin {
   margin-left: 40%;
+  color: rgb(93, 80, 61);
 }
 
 .features {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  /* position: absolute; */
 }
 
 .action {
@@ -57,6 +61,139 @@
   border-radius: 15px;
 }
 
+.add-task-win {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(76, 73, 73, 0.6);
+  margin-top: 5%;
+  gap: 25px;
+  height: 80vh;
+  width: 100%;
+  border-radius: 15px;
+  position: absolute;
+}
+
+.left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  gap: 25px;
+  height: 40vh;
+  width: 20%;
+  border-radius: 25px;
+  background-color: #3c4043;
+  opacity: 0.7;
+}
+
+.button-description{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+}
+.right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  margin-left: 5%;
+  gap: 25px;
+  height: 80vh;
+}
+
+/* .task-name{
+  padding-right: 50%;
+}
+
+.st-date{
+  margin-left: 50px;
+}
+
+.end-date{
+  margin-left: 50px;
+} */
+
+.list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-left: 15%;
+  gap: 5 px;
+  width: 100%;
+}
+.list>li{
+  margin: 5px 0px;
+}
+
+.li-style{
+  display: flex;
+  color: white;
+  gap: 40px;
+}
+
+.small-button{
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  color: rgb(60, 66, 87);
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  padding: 4px 8px;
+  display: inline-block;
+  min-height: 28px;
+}
+
+.small-button>img{
+  height: 20px;
+  width: 20px;
+}
+
+.small-button-del{
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  color: rgb(60, 66, 87);
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  padding: 4px 8px;
+  display: inline-block;
+  min-height: 28px;
+}
+
+.small-button-del>img{
+  height: 20px;
+  width: 20px;
+}
+
+.input-names{
+    display: flex;
+    justify-content: center;
+}
+
+.edit-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titles{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:40px;
+  color: white;
+}
+
+.checkbox{
+  height: 40px;
+  width: 40px;
+}
 
 /* buttons styling by https://getcssscan.com/css-buttons-examples with some edits */
 .button-17 {
@@ -90,15 +227,15 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 80%;
+  width: 200px;
   will-change: transform, opacity;
   z-index: 0;
 }
 
 .button-17:hover {
-    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 50%);
-    transform: translateX(-5px);
-  }
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 50%);
+  transform: translateX(-5px);
+}
 
 .button-17:hover {
   background: #f6f9fe;

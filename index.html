@@ -10,30 +10,54 @@
   <body>
     <div class="page">
       <div class="main">
+        <div class="qoute">
+          <h1>“Don't put off till tomorrow what you can do today”</h1>
+          <p class="benjamin">Benjamin Franklin</p>
+        </div>
         <div class="welcome">
-          <div class="qoute">
-            <h1>“Don't put off till tomorrow what you can do today”</h1>
-            <p class="benjamin">Benjamin Franklin</p>
-          </div>
-          <div class="features">
+          <div id="feature" class="features">
             <div class="action">
-              <button class="button-17">List Tasks</button>
-              <button class="button-17">Search Task</button>
-              <button class="button-17">Add Task</button>
-            </div>
+              <button id="list-task" class="button-17">List Tasks</button>
+              <button id="search-task" class="button-17">Search Task</button>
+              <button id="add-task" class="button-17">Add Task</button>
           </div>
         </div>
-        <div class="add-task">
-          
+        <div id="add-task-window" class="add-task-win">
+          <div id="left" class="left">
+            <button id="back1" class="button-17">Back</button>
+            <div class="button-description">
+              <p>Task Name: </p>
+              <input name="f-name" id="f-name" placeholder="enter your first name"/>
+            </div>
+            <div class="button-description">
+              <p>Start Date: </p>
+              <input type="date" name="start-date" id="start-date" class="start-date"/>
+            </div>
+            <div class="button-description">
+              <p>End Date: </p>
+              <input type="date" name="end-date" id="end-date" class="end-date"/>
+            </div>
+            <button id="add" class="button-17">Add</button>
+          </div>
+          <div id="right" class="right">
+            <button id="back2" class="button-17">Back</button>
+            <div class="titles"><p>Task Name</p> <p>Start Date</p> <p>Due Date</p> <p>Completed</p> <p>Active</p></div> 
+            <div id="task-display" class="task-display">
+              <ul id="list" class="list">
+                <!-- <button onclick="blabla">click me 3ad</button> -->
+              </ul>
+            </div>
+          </div>  
+        </div>
         </div>
       </div>
-      <div class="footer">
+      <!-- <div class="footer">
         <div class="copyrights">
           <p>All Rights Reserved</p>
           <p>Elsayed Product</p>
           <p>Terms and Policy</p>
         </div>
-      </div>
+      </div> -->
     </div>
     <script src="./scripts/script.js"></script>
   </body>
